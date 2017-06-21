@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+
+	<title>QR Code женератор</title>
+	<meta name="description" content="QR Code generator">
+	<meta name="author" content="Coder_ak">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onLoad='document.getElementById("url").focus()'>
+	<div class='wrap'>
+		<div class='input'><input type="text" id='url' placeholder="Введіть посилання"/></div>
+
+		<div id='qrimage' style='display:none'></div>
+
+		<div id='savebutton' style='display:none'><button onClick="saveCode()">Зберегти зображення</button></div>
+	</div>
+	<div class='footer'>Hello, Roma! &copy; <a href='http://coderak.tk'>Coder_ak</a></div>
+	<script src="qrious.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
